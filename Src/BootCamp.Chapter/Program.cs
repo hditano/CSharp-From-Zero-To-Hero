@@ -1,4 +1,8 @@
-﻿namespace BootCamp.Chapter
+﻿﻿using System;
+ using System.Linq;
+ using System.Text;
+
+ namespace BootCamp.Chapter
 {
     class Program
     {
@@ -9,6 +13,13 @@
             // - FindPersonWithBiggestLoss
             // - FindRichestPerson
             // - FindMostPoorPerson
+
+            var balance = PeoplesBalances.Balances;
+            foreach (var i in balance)
+            {
+                Console.WriteLine(i);
+            }
+            
         }
     }
 }
